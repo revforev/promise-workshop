@@ -15,10 +15,6 @@
         .then((species) => fetch(species.shape.url))
         .then((response) => response.json())
         .then((shape) => console.log(shape));
-
-      // `fetch` and `response.json` always returns a new promise object
-      // if we return that new promise from each .then
-      // we can chain them together nicely
     </script>
   </body>
 </html>
